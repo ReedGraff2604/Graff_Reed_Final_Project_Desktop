@@ -107,6 +107,7 @@ div.container {
                     padding: 5px 10px;
                     display: inline-block;
                     border: 2px #3c2f2f solid;
+                    border-radius: 5px; /* 5px rounded corners */
                 }
 
                 span.not-bold {
@@ -124,6 +125,8 @@ div.container {
             background-color: #6f4436;
             padding: 10px;
             color: #e0c2aa;
+            margin: 10px;
+            border-radius: 5px; /* 5px rounded corners */
         }
 
         h2 {
@@ -168,6 +171,8 @@ div.container {
             }
 
             section.menu-options {
+                margin-bottom: 15px;
+
                 h1 {
                     text-align: center;
                     margin: 10px;
@@ -272,12 +277,24 @@ div.container {
                 flex-basis: 50%;
                 display: flex;
                 flex-direction: row;
-                gap: 1rem;
+                /*gap: 1rem;*/
                 flex-wrap: wrap;
                 justify-content: center;
-                padding: 1rem;
-                border: 10px #6d5d47 solid;
+                padding: 0 1rem;
+                border: 2px #6d5d47 solid;
                 /*width: 30%;*/
+
+                &.location {
+                    &.location {
+                        display: flex;
+                        text-align: center;
+                        padding: 150px 0;
+
+                        p {
+                            font-size: 1.30rem;
+                        }
+                    }
+                }
 
                 &.hours {
                     /*width: 50%;*/
@@ -285,15 +302,19 @@ div.container {
                     flex-direction: column;
 
                     .day {
-                        border: 1px dotted black;
+                        /*border: 1px dotted black;*/
                         width: 100%;
 
                         .left, .right {
                             text-align: left;
                             width: 50%;
-                            border: 1px solid black;
+                            /*border: 1px solid black;*/
                             display: flex;
                             justify-content: flex-start;
+
+                            p {
+                                font-size: 1rem;
+                            }
                         }
                     }
                 }
